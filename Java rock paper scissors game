@@ -1,0 +1,32 @@
+import java.util.*;
+class GameRockPaperScissors{
+	
+	public static void main(String[] args){
+		//0 for rock
+		//1 for paper
+		// 2 for scissors
+		Scanner input=new Scanner(System.in);
+		System.out.println("enter 0 for rock , 1 for paper and 2 for scissors");
+		int userInput=input.nextInt();
+		
+		Random random=new Random();
+		int computerInput=random.nextInt(3);
+		
+		if(userInput==computerInput){
+			System.out.println("Draw");
+		}
+		else if(userInput==0 && computerInput==2 || userInput==1 && computerInput==0 || userInput==2 && computerInput==1){
+						System.out.println("congratulations!! You won");}
+						else{
+										System.out.println("Computer won");
+						}
+		if(computerInput==0){
+						System.out.println("computer choosed rock");
+		}
+		else if(computerInput==1){
+						
+					System.out.println("computer choosed paper");}
+					else{
+									System.out.println("computer choosed scisssors");
+					}
+	}}
